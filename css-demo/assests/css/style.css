@@ -1,0 +1,80 @@
+/* ------ Style for css-demo -------*/
+/* Color Theme Swatches in Hex */
+.Poseidon-1-hex { color: #012030; }
+.Poseidon-2-hex { color: #13678A; }
+.Poseidon-3-hex { color: #45C4B0; }
+.Poseidon-4-hex { color: #9AEBA3; }
+.Poseidon-5-hex { color: #DAFDBA; }
+
+
+
+/*  ---------------Box Sizing-----------------  */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/*------Global Styling------*/
+
+body{
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  margin:0;/*---i forgot, something about space around picture or pixels--*/
+}
+
+header.primary{/*---header.primary speficially calls for the header section*/
+  background-color:#13678A;
+  color:#ffffff;
+  text-shadow:1px 1px #000000;
+  text-align:center;
+  padding: 40px; /*----changes color around the header(in the instance)*/
+  /*T,R,B,L*/
+  padding: 20px,40px,20px,40px;
+}
+
+header.primary h1{
+  font size:2.4rem;
+  margin:20px 0 10px;
+  
+}
+header.primary h1 a{
+  color:#ffffff;
+  text-decoration:none; /*takes off line underneath*/
+}
+header.primary h2{
+  font-size:1.4rem;
+  margin:0;
+}
+header.primary nav{
+  max width:900px; /*---dont know---*/
+  margin:20px auto; /*space around the outside*/
+}
+header.primary nav ul{
+  display:flex;
+  flex-direction:row; /*fixes the href spacing and stuff*/
+  justify-content:space-evenly;
+  padding:0; /*space around the inside*/
+}
+
+header.primary nav ul li{
+  list-style-type:none; /*takes away bullet points*/
+  
+}
+header.primary nav ul li a{
+  color:#ffffff;
+  text-decoration:none;
+  background-color:#45C4B0;
+  background-color:rgba(0,0,0,.4);
+  padding: 5px 10px;
+  border:1px solid #012030; /*changes outside of the links boxes*/
+  border-radius:10px /*changes the box roundness/shape*/
+    /*---opacity makes it obpec--*/
+   transition:5s;/*once you hover over it will take that amount of time for the box to glow*/
+}
+
+header.primary nav ul li a:hover{
+  background-color:rgba(0,0,0,.8) /* once you mouse over it, it shows up to indicate it takes you somehwere aka link*/
+}
