@@ -1,72 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>SpaceX History</title>
+    <title>SpaceX History</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Space X Dragon">
+    <meta name="author" content="Malaychia Craig">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            justify-content: center;
+        }
+
+        nav ul li {
+            text-align: center;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        main section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Adjustments for smaller screens */
+        @media screen and (max-width: 768px) {
+            nav ul {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
-  <h1>SpaceX History</h1>
+    <header>
+        <h1><a href="index.html">SpaceX History</a></h1>
+        <h2>Timeline of SpaceX's Development</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Dragon Development</h2>
+            <p>
+                SpaceX began developing the Dragon spacecraft in late 2004, announcing its plan to enter service in 2009. In 2006, SpaceX secured a contract with NASA to provide commercially supplied resupply services to the International Space Station (ISS) using the Dragon spacecraft.
+            </p>
+        </section>
+        <section>
+            <h2>Maiden Flights and Achievements</h2>
+            <p>
+                In December 2010, Dragon had its maiden flight and became the first commercially built and operated spacecraft successfully recovered from orbit. By May 25, 2012, a cargo variant of Dragon achieved the first successful rendezvous and attachment to the ISS. Subsequently, SpaceX began regular cargo flights to the ISS under NASA's Commercial Resupply Services program from October 2012.
+            </p>
+        </section>
+        <section>
+            <h2>SpaceX Reuse Efforts</h2>
+            <p>
+                On June 3, 2017, the CRS-11 capsule, largely assembled from previously flown components from the CRS-4 mission in September 2014, was launched again. This mission notably reused various components such as the hull, structural elements, thrusters, harnesses, and propellant tanks, showcasing SpaceX's commitment to reusability.
+            </p>
+        </section>
+        <section>
+          <section>
 
-  <h2>Dragon Development</h2>
-  <p>
-    SpaceX began developing the Dragon spacecraft in late 2004, announcing its plan to enter service in 2009. In 2006, SpaceX secured a contract with NASA to provide commercially supplied resupply services to the International Space Station (ISS) using the Dragon spacecraft.
-  </p>
-
-  <h2>Maiden Flights and Achievements</h2>
-  <p>
-    In December 2010, Dragon had its maiden flight and became the first commercially built and operated spacecraft successfully recovered from orbit. By May 25, 2012, a cargo variant of Dragon achieved the first successful rendezvous and attachment to the ISS. Subsequently, SpaceX began regular cargo flights to the ISS under NASA's Commercial Resupply Services program from October 2012.
-  </p>
-
-  <h2>SpaceX Reuse Efforts</h2>
-  <p>
-    On June 3, 2017, the CRS-11 capsule, largely assembled from previously flown components from the CRS-4 mission in September 2014, was launched again. This mission notably reused various components such as the hull, structural elements, thrusters, harnesses, and propellant tanks, showcasing SpaceX's commitment to reusability.
-  </p>
-
-  <h2>Recent Missions</h2>
-  <table border="1">
-    <tr>
-      <th>Launch Date</th>
-      <th>Customer</th>
-      <th>Launch Site</th>
-      <th>Vehicle</th>
-    </tr>
-    <tr>
-      <td>9/7/2017</td>
-      <td>U.S. AIR FORCE (OTV-5)</td>
-      <td>CAPE CANAVERAL</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>8/24/2017</td>
-      <td>NATIONAL SPACE ORGANIZATION (TAIWAN)</td>
-      <td>VANDENBERG</td>
-      <td>FALCON 9</td>
-    </tr>
-    <tr>
-      <td>7/5/2017</td>
-      <td>INTELSAT</td>
-      <td>CAPE CANAVERAL</td>
-      <td>FALCON 9</td>
-    </tr>
-    <tr>
-      <td>6/25/2017</td>
-      <td>IRIDIUM (FLIGHT 2)</td>
-      <td>VANDENBERG</td>
-      <td>FALCON 9</td>
-    </tr>
-    <tr>
-      <td>6/23/2017</td>
-      <td>BULGARIASAT-1</td>
-      <td>CAPE CANAVERAL</td>
-      <td>FALCON 9</td>
-    </tr>
-    <tr>
-      <td>6/3/2017</td>
-      <td>NASA RESUPPLY TO ISS (FLIGHT 11)</td>
-      <td>CAPE CANAVERAL</td>
-      <td>DRAGON & FALCON 9</td>
-    </tr>
-  </table>
-
+            <h2>Recent Missions</h2>
+            <table>
+                <tr>
+                    <th>Launch Date</th>
+                    <th>Customer</th>
+                    <th>Launch Site</th>
+                    <th>Vehicle</th>
+                </tr>
+                <tr>
+                    <td>9/7/2017</td>
+                    <td>U.S. AIR FORCE (OTV-5)</td>
+                    <td>CAPE CANAVERAL</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>8/24/2017</td>
+                    <td>NATIONAL SPACE ORGANIZATION (TAIWAN)</td>
+                    <td>VANDENBERG</td>
+                    <td>FALCON 9</td>
+                </tr>
+                <tr>
+                    <td>7/5/2017</td>
+                    <td>INTELSAT</td>
+                    <td>CAPE CANAVERAL</td>
+                    <td>FALCON 9</td>
+                </tr>
+                <tr>
+                    <td>6/25/2017</td>
+                    <td>IRIDIUM (FLIGHT 2)</td>
+                    <td>VANDENBERG</td>
+                    <td>FALCON 9</td>
+                </tr>
+                <tr>
+                    <td>6/23/2017</td>
+                    <td>BULGARIASAT-1</td>
+                    <td>CAPE CANAVERAL</td>
+                    <td>FALCON 9</td>
+                </tr>
+                <tr>
+                    <td>6/3/2017</td>
+                    <td>NASA RESUPPLY TO ISS (FLIGHT 11)</td>
+                    <td>CAPE CANAVERAL</td>
+                    <td>DRAGON & FALCON 9</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <h6>&copy; 2023 SpaceX | <a href="mraig@ualr.edu">Report a Problem</a></h6>
+    </footer>
 </body>
 </html>

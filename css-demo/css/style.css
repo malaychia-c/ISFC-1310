@@ -3,14 +3,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Change to your preferred background color */
+    background-color: #f4f4f4; 
   }
   
-  /* Google Fonts */
-  /* Include the Google Fonts link in the HTML head */
-  
-  /* Background */
-  /* You can specify background styles for specific elements or the body */
+ 
   
   /* Header */
   header.primary {
@@ -39,10 +35,7 @@ body {
     text-decoration: none;
   }
   
-  /* SVG Backgrounds */
-  /* Implement SVG backgrounds as needed */
-  
-  /* Navigation */
+
   nav[role="navigation"] {
     background-color: #444;
     padding: 10px;
@@ -63,7 +56,7 @@ body {
     text-decoration: none;
   }
   
-  /* Content */
+
   .container {
     max-width: 960px;
     margin: 0 auto;
@@ -115,12 +108,16 @@ body {
   aside[role="complementary"] .widget h2 {
     color: #333;
   }
-  
-  /* Footer */
+
   footer#colophon {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
+  }
+  nav[role="navigation"] {
+    background-color: #444;
+    padding: 10px;
+    text-align: center; 
   }
   
