@@ -120,4 +120,25 @@ body {
     padding: 10px;
     text-align: center; 
   }
-  
+  /* Additional CSS for the Footer Navigation */
+footer#colophon nav[role="navigation"] {
+  background-color: #222;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px; /* Add space between footer content and navigation */
+}
+
+footer#colophon nav[role="navigation"] ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer#colophon nav[role="navigation"] ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+footer#colophon nav[role="navigation"] ul li a {
+  color: #fff;
+  text-decoration: none;
+}
