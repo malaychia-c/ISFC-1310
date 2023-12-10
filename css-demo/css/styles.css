@@ -1,130 +1,122 @@
-
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4; 
-  }
-  
-  /* Header */
-  header.primary {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  header.primary h1 a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  header.primary nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  header.primary nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  header.primary nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; 
+}
 
-  nav[role="navigation"] {
-    background-color: #444;
-    padding: 10px;
-  }
-  
-  nav[role="navigation"] ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav[role="navigation"] ul li {
-    display: inline;
-    margin-right: 15px;
-  }
-  
-  nav[role="navigation"] ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
+header.primary {
+  background: linear-gradient(to right, #e82121, #ff6f61);
+  color: #fff;
+  padding: 30px;
+}
 
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Articles */
-  .post {
-    margin-bottom: 30px;
-  }
-  
-  .post header time {
-    font-style: italic;
-  }
-  
-  .post header figure {
-    margin-bottom: 10px;
-  }
-  
-  .post header figure img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .post header h2 a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .post p {
-    line-height: 1.6;
-  }
-  
-  .post footer.post-meta {
-    font-style: italic;
-    color: #888;
-  }
-  
-  /* Aside */
-  aside[role="complementary"] {
-    background-color: #eee;
-    padding: 20px;
-  }
-  
-  aside[role="complementary"] .widget {
-    margin-bottom: 20px;
-  }
-  
-  aside[role="complementary"] .widget h2 {
-    color: #333;
-  }
+header.primary h1 a {
+  color: #fff;
+  text-decoration: none;
+}
 
-  footer#colophon {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-  }
-  nav[role="navigation"] {
-    background-color: #444;
-    padding: 10px;
-    text-align: center; 
-  }
-  /* Additional CSS for the Footer Navigation */
+header.primary nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header.primary nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header.primary nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+nav[role="navigation"] {
+  background-color: lightcoral;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+nav[role="navigation"] ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav[role="navigation"] ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav[role="navigation"] ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.post {
+  margin-bottom: 30px;
+}
+
+.post header time {
+  font-style: italic;
+}
+
+.post header figure {
+  margin-bottom: 10px;
+}
+
+.post header figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+.post header h2 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.post p {
+  line-height: 1.6;
+}
+
+.post footer.post-meta {
+  font-style: italic;
+  color: #888;
+}
+
+aside[role="complementary"] {
+  background-color: #eee;
+  padding: 20px;
+}
+
+aside[role="complementary"] .widget {
+  margin-bottom: 20px;
+}
+
+aside[role="complementary"] .widget h2 {
+  color: #333;
+}
+
+footer#colophon {
+  background: linear-gradient(to right, #333, #444);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+
 footer#colophon nav[role="navigation"] {
   background-color: #222;
   padding: 10px;
   text-align: center;
-  margin-top: 20px; /* Add space between footer content and navigation */
+  margin-top: 20px; 
 }
 
 footer#colophon nav[role="navigation"] ul {
@@ -140,4 +132,14 @@ footer#colophon nav[role="navigation"] ul li {
 footer#colophon nav[role="navigation"] ul li a {
   color: #fff;
   text-decoration: none;
+}
+
+
+header.primary nav ul li a:hover {
+  color: #ffcc00;
+  transition: color 0.3s ease;
+}
+
+.post header h2 a:hover {
+  text-decoration: underline;
 }
